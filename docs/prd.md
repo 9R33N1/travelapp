@@ -1,6 +1,6 @@
 # Product Requirements Document
 
-## TravelApp *(temporary name — Asaf's doc refers to it as "Trip Planning Canvas")*
+## TravelApp *(temporary name)*
 
 > **How this document was built:** This merges two source docs — Idan's English PRD and Asaf's Hebrew concept doc (`asaf.txt`, translated to English below). Where both of you land on the same idea, it's combined into one version. Where you land on genuinely different ideas, both are shown as **Idan:** / **Asaf:** so you can decide together. Sections neither of you has written yet are left as `[ ]` placeholders. See the **Open Questions** section (§21) for the handful of things worth resolving before this goes further — the biggest one is a real scope fork, flagged right up front below.
 
