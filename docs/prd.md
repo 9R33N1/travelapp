@@ -26,7 +26,7 @@
 
 *No shared executive summary has been written yet. Asaf's one-sentence product definition is included below as a starting draft — needs Idan's take and joint agreement.*
 
-**Asaf:** "A visual trip-planning workspace that connects geography and time, allowing travelers to explore places, group them into days, experiment with routes, and instantly understand the impact of every planning decision."
+**Asaf:** "A visual trip-planning workspace for Spatial + Temporal Planning that seamlessly connects geography and time—allowing travelers to explore places, group them into days, experiment with routes, and instantly understand the ripple effects of every planning decision."
 
 **Idan:** [ ]
 
@@ -46,16 +46,22 @@ Planning a trip is an exercise in app juggling: research lives in chats, itinera
 
 4. **Lack of Dynamic & Contextual Intelligence** — Travelers operate with static plans that can't adapt to the real world. Missing: **dynamic route planning** that factors in drive times, daily limits, and accommodation needs; **real-time intelligence** — proactive, AI-generated recommendations based on preferences, current weather, and local events (road closures, wildfires, accidents); **fluid adjustment** — the ability to adjust routes/plans on the fly without manually reconstructing the itinerary.
 
-## 2.2 Additional framing — geography vs. time (Asaf)
+## 2.2 Core Planning Dynamics: Spatial + Temporal Planning (Asaf)
 
-Independent trip planning, especially somewhere new, requires connecting two dimensions that today live apart:
+What travelers actually do today during trip planning is fundamentally a process of **Spatial + Temporal Planning**. They are constantly attempting to solve a multi-dimensional puzzle simultaneously:
+- **Spatial awareness (Where things are):** Understanding the geographic layout of attractions, dining, viewpoints, and transit points.
+- **Temporal constraints (How long they take):** Accounting for visit durations, opening/operating hours, and realistic travel times between stops.
+- **Clustering & Flow (What can be grouped together):** Identifying which POIs logically belong on the same day to minimize transit overhead.
+- **Lodging Anchors (Where to stay):** Deciding where it makes strategic sense to sleep based on the evolving itinerary, rather than picking hotels in a vacuum.
+- **Ripple Effects (What happens when something moves):** Understanding the cascading consequences on travel time, day feasibility, and lodging when any single item is added, moved, or rescheduled.
 
-- **The geographic dimension** — where attractions, restaurants, hotels, and points of interest are, and how far apart they are.
-- **The temporal dimension** — how long each activity takes, when it's possible, how long it takes to get there, and what realistically fits in a day.
+Today, these two dimensions live in separate, disconnected tools:
+- **The geographic dimension** lives in navigation/map apps (e.g., Google Maps), which are great for point lookups and navigation but weak for early, flexible, pre-itinerary planning.
+- **The temporal dimension** lives in spreadsheets, calendar apps, or text notes, which track days and times but lack spatial awareness and automatic routing feedback.
 
-Tools like Google Maps are strong for navigation and point lookups, but weaker for the *early* planning stage — before an itinerary exists — when the traveler wants to explore, play with options, group places, build out days, and understand the impact of changes before committing to a route. Today that stage is done manually across maps, lists, Google Maps, spreadsheets, notes apps, and sometimes even a printed map.
+Because neither tool bridges space and time, the traveler's brain is forced to act as the manual calculation engine—juggling tabs, estimating drive times, recalculating day loads, and rebuilding itineraries from scratch whenever a plan changes.
 
-*(This isn't a contradiction of Idan's framing — it's a sharper articulation of the "planning" side of point 1 and point 4 above.)*
+*(This isn't a contradiction of Idan's framing — it's a sharper articulation of the core cognitive friction in points 1 and 4 above.)*
 
 ---
 
@@ -75,16 +81,12 @@ Three primary platforms, for a seamless experience across devices:
 
 **Idan:** [ ]
 
-**Asaf — Vision:** A visual tool that lets a traveler build a trip as an interactive planning board connecting a map to a timeline. Users add places of interest, see them on the map, cluster them geographically, and "play" with them across days. The product should help answer questions like:
-- What's near what?
-- Which places make sense to do on the same day?
-- Where should I stay?
-- How long will each day actually take?
-- How much time will I lose to travel?
-- Is today overloaded?
-- What happens if I move an attraction to another day?
-- Should I change the order of where I'm staying?
-- What do I need to cut if there isn't enough time?
+**Asaf — Vision:** A visual tool designed specifically for **Spatial + Temporal Planning**—letting a traveler build a trip as an interactive planning board that seamlessly connects geography (space) and timeline (time). Users add places of interest, visualize them on the map, cluster them into days, and dynamically "play" with their schedule. The product answers the five core spatial-temporal questions simultaneously:
+- **Spatial awareness:** What's near what?
+- **Clustering:** Which places make sense to do on the same day?
+- **Lodging anchors:** Where should I stay based on the route?
+- **Temporal budget:** How long will each day take, how much time is lost to transit, and is the day overloaded?
+- **Ripple effects:** What happens across the whole route if I move an attraction or change where I sleep?
 
 **Asaf — Key principle:** *"The product should optimize the user's thinking, not replace it."* Instead of saying "here's your optimal trip," the product should say something like: "If you do these things today, it'll take 8h20m, of which 2h10m is travel, leaving you 1 free hour." The system isn't meant to decide the trip for the user — it's meant to give them information, calculations, and consequences so *they* can decide.
 
@@ -218,16 +220,17 @@ Worth reading alongside the scope question above: **Wanderlog** already does a v
 
 **"Every change should be visible in both space and time."**
 
-Example: the user drags an attraction from Day 3 to Day 4. The system immediately updates:
-- its position within Day 4
-- the order of activities
-- travel times
-- start/end times
-- remaining free time
-- the day's overall load
-- the relevant hotel/stay
+Because trip planning is an ongoing **Spatial + Temporal Planning** process, any action taken on the canvas must immediately reflect across both dimensions.
 
-This lets the user run "what if we did this tomorrow instead?" experiments without manually rebuilding the whole route.
+Example: the user drags an attraction from Day 3 to Day 4. The system immediately recalculates and visually updates:
+- its geographic position and sequence on the Day 4 map route
+- the chronological order of activities on the Day 4 timeline
+- point-to-point travel times and transit legs
+- activity start/end times
+- remaining free time and overall day load / feasibility indicator
+- lodging proximity and whether the chosen hotel/stay still makes sense
+
+This lets the user run effortless "what if we did this tomorrow instead?" experiments without having to manually recalculate drive times or rebuild the entire route.
 
 ---
 
