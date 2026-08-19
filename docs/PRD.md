@@ -1,11 +1,6 @@
 # Product Requirements Document
 
-## TravelApp *(temporary name)*
-
-> ### ⚠️ Read this first — the core scope question
-> Asaf's doc describes a tightly scoped **map + timeline planning canvas**, with an MVP that explicitly avoids AI/automation and doesn't mention collaboration, booking, expenses, or real-time location.
-> Idan's PRD problem statement describes a much bigger **all-in-one trip platform** — covering collaboration, shared expenses, real-time location sharing, offline execution mode, weather, and post-trip archiving, in addition to planning. It's also already scoped against real competitors (Wanderlog, TripIt) that operate at that broader scale.
-> Both are valid products, but they're different bets on what to build first — and notably, Idan's own competitive analysis (§8.3) shows Wanderlog already does something close to Asaf's MVP *and* the collaboration layer. Worth discussing directly. Called out again in §21.
+## TravelApp 
 
 ---
 
@@ -56,36 +51,54 @@ Three primary platforms, for a seamless experience across devices:
 
 ## 4.1 Product Vision: Full Lifecycle Travel Platform
 
-A unified visual workspace and intelligent companion designed for **Spatial + Temporal Continuity** across the entire trip lifecycle. The product bridges geography (space) and timeline (time) from initial discovery to on-the-road execution and beyond, directly solving the core problems identified in §2:
+A unified visual workspace and intelligent companion built on **Spatial + Temporal Continuity** across the entire trip lifecycle. The product bridges geography (space) and timeline (time)—taking travelers seamlessly from initial inspiration to on-the-road execution and beyond. It directly addresses the problems identified in §2 across all core lifecycle stages:
 
-### 1. Pre-Trip: Spatial + Temporal Planning Canvas
-An interactive planning board where travelers and groups explore places of interest, visualize them on a map, cluster them into logical days, and dynamically experiment with routes. The system continuously answers the five core planning questions:
-- **Spatial awareness:** What's near what?
-- **Clustering & Flow:** Which places make sense to group on the same day?
-- **Lodging anchors:** Where should I stay based on the evolving route?
-- **Temporal budget:** How long will each day take, how much time is lost to transit, and is the day feasible or overloaded?
-- **Ripple effects:** What happens across the entire schedule when an attraction moves or a stay changes?
+### 1. Stage 1: Pre-Trip Planning (Spatial + Temporal Canvas)
+An intuitive, interactive planning board where travelers explore places of interest, visualize them on a map, cluster them into logical days, and dynamically experiment with routes. The system continuously resolves the core planning puzzle:
+- **Spatial Awareness:** Understanding what is near what across destinations.
+- **Clustering & Flow:** Grouping places logically into daily schedules to minimize transit waste.
+- **Lodging Anchors:** Strategically placing accommodations based on the route rather than booking in isolation.
+- **Temporal Feasibility:** Calculating transit times, activity durations, and free time to instantly surface whether a day is balanced or overloaded.
+- **Ripple Effects:** Visualizing cascading impacts across the itinerary whenever an attraction or stay is moved, added, or deleted.
 
-### 2. In-Trip: Execution, Live Guide & Adaptive Co-Pilot
-A responsive, mobile-first companion (with robust offline capability) that supports travelers on the road in two vital modes:
-- **Live Guide for the Original Plan:** Provides seamless execution—guiding travelers from activity to transit to lodging with turn-by-turn routing, timing context, and rapid access to notes and reservations.
-- **Dynamic Real-Time Adaptation & Suggestions:** When reality diverges from the plan (weather shifts, unexpected closures, delays, fatigue, or spontaneous opportunities), the system acts as an adaptive co-pilot. It lets travelers modify the plan on the fly with instant recalculation of ripple effects, while proactively suggesting contextual alternatives and route adjustments to save the day without manual recalculation stress.
+### 2. Stage 2: Sharing & Collaborative Co-Creation (Social Synchronization)
+A single source of truth that eliminates disjointed chat threads, scattered links, and messy spreadsheets:
+- **Pre-Trip Collaboration:** Co-creating itineraries with co-travelers, allowing group members to propose places, vote on activities, and view changes in real time.
+- **Shared Budget & Expense Tracking:** Built-in tracking for group expenses, split costs, and automated pay-back calculations.
+- **In-Trip Social Coordination:** Seamless sharing of live locations, itineraries, and meeting points among travel companions to remove logistical friction on the road.
 
-### 3. Post-Trip: Archiving & Resolution
-A clean closure experience that records actual routes and visited places vs. the original plan, preserves trip memories, and resolves shared group expenses seamlessly.
+### 3. Stage 3: Actual Trip & Live Execution (In-Pocket Mobile & Offline Guide)
+Bridging the desktop-to-mobile usability gap with a high-utility, mobile-first travel companion:
+- **Robust Offline Resilience:** Full access to maps, schedules, notes, and bookings in areas with limited or no cellular connectivity.
+- **Active Itinerary Execution:** Guiding travelers smoothly from activity to transit to lodging with turn-by-turn routing, timing context, and daily progress tracking.
+- **Contextual Access:** Storing all confirmation details, tickets, and location-specific notes directly where and when they are needed.
+
+### 4. Stage 4: Run-Time Adjustments & Dynamic Adaptation (Adaptive In-Trip Co-Pilot)
+Empowering travelers when reality inevitably diverges from the plan (weather shifts, unexpected closures, delays, traffic, fatigue, or spontaneous opportunities):
+- **Fluid On-The-Fly Editing:** Allowing travelers to easily swap, postpone, or drop activities with instant recalculation of ripple effects across the rest of the day and trip.
+- **Contextual Real-Time Intelligence:** Proactively suggesting smart alternatives (e.g., indoor activities during sudden rain, nearby dining recommendations, detour adjustments for road closures) without forcing travelers to manually rebuild their plans.
+
+### 5. Stage 5: Post-Trip Reflection & Archiving (Resolution & Memory Canvas)
+A clean closure experience to wrap up the journey:
+- **Actuals vs. Plan:** Preserving the recorded route, actual timeline, and visited places for memories or future reference.
+- **Financial Settlement:** Finalizing shared expense balances and exportable summaries.
+- **Reusability:** Transforming past trips into reusable templates or shareable recommendations for friends and the community.
 
 ---
 
 ## 4.2 Key Product Principles
 
 1. **"Every change is visible in both space and time."**
-   Whether reordering days during desktop planning or pushing back an afternoon activity on mobile while stuck in traffic, changes immediately reflect across both the map and the timeline with updated drive times, day loads, and feasibility indicators.
+   Whether dragging an attraction to a new day during desktop planning or shifting an afternoon stop on mobile while stuck in traffic, all changes immediately update across both the map and timeline with fresh travel times, day loads, and feasibility indicators.
 
 2. **"Optimize and augment the user's thinking, not replace it."**
-   The product is built to give travelers clarity, control, and empowerment. Instead of acting as an opaque "black box" that dictates an inflexible schedule, the system provides real-time calculations, consequences, and proactive suggestions so *the user* makes informed choices (e.g., *"If you stay 1 more hour here, you'll arrive after closing time at stop #4 — here are 2 alternate indoor spots nearby"*).
+   The product gives travelers clarity, empowerment, and control. Rather than an opaque "black box" that dictates rigid schedules, the system provides transparent calculations, consequences, and proactive suggestions so *the user* remains the ultimate decision-maker (e.g., *"If you spend 1 more hour here, you'll reach stop #4 after closing—here are 2 alternate options nearby"*).
 
-3. **"Seamless Desktop Planning to In-Pocket Execution."**
-   A unified data model ensures that the rich, expressive plan created on the web seamlessly flows into a high-utility, resilient (offline-ready) mobile companion on the go.
+3. **"Frictionless Collaboration & Single Source of Truth."**
+   The entire travel group operates from one unified, dynamic workspace—combining planning, sharing, expense splitting, and live status in one place instead of scattered across multiple siloed apps.
+
+4. **"Seamless Desktop Planning to Resilient In-Pocket Execution."**
+   A unified data model ensures that the rich, expressive canvas crafted on the web translates into a dependable, offline-ready mobile guide that executes and dynamically adapts on the go.
 
 ---
 
