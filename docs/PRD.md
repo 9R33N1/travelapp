@@ -106,8 +106,8 @@ A clean closure experience to wrap up the journey:
 
 | Persona | Description | Key Needs | Pain Points |
 | :--- | :--- | :--- | :--- |
-| **Solo backpacker / independent multi-day traveler** *(Idan's persona, filled in with Asaf's description)* | Plans trips of several days or more — road trips, multi-city/region trips, trips with many attractions, trips where geography matters a lot to the plan. Wants control over the plan, not the system building the trip for them. | Understand the geographic structure of a trip quickly; understand daily load quickly; compare alternatives; change the route without redoing manual work; reliable guide on the road | Juggling maps, spreadsheets, and notes; hard to tell what's realistic to fit in a day; losing track of travel-time cost between stops; difficulty adapting when plans change on-trip |
-| **Group travelers** *(Idan)* | [ ] *(Idan's persona — description not yet written; likely tied to the collaboration/expense-splitting features in §2(3), which are outside Asaf's MVP — see §8)* | [ ] | [ ] |
+| **Solo backpacker / independent multi-day traveler** | Plans trips of several days or more — road trips, multi-city/region trips, trips with many attractions, trips where geography matters a lot to the plan. Wants control over the plan, not the system building the trip for them. | Understand the geographic structure of a trip quickly; understand daily load quickly; compare alternatives; change the route without redoing manual work; reliable guide on the road | Juggling maps, spreadsheets, and notes; hard to tell what's realistic to fit in a day; losing track of travel-time cost between stops; difficulty adapting when plans change on-trip |
+| **Group travelers** | [ ]  | [ ] | [ ] |
 
 ---
 
@@ -125,17 +125,12 @@ A clean closure experience to wrap up the journey:
 - **Post-Trip:** Review trip actuals and resolve shared expenses without friction.
 
 ## 6.3 Non-Goals
-**Asaf:** The MVP is explicitly *not* an "AI Travel Planner" — it should not fully auto-generate an itinerary or make decisions for the user without their control.
+The MVP is explicitly *not* an "AI Travel Planner" — it should not fully auto-generate an itinerary or make decisions for the user without their control.
 
 ---
 
 # 7. Success Metrics / KPIs
 
-| Goal | Metric / KPI | Target | Measurement Source |
-| :--- | :--- | :--- | :--- |
-| [ ] | [ ] | [ ] | [ ] |
-
-**Asaf — qualitative success criteria** *(not yet expressed as measurable KPIs — worth converting into the table above once you agree on targets):*
 - How easily a user goes from "I have 30 places I'm interested in" to "I understand what this trip could look like"
 - Fast understanding of the trip's geographic structure
 - Fast understanding of each day's load
@@ -148,7 +143,6 @@ A clean closure experience to wrap up the journey:
 
 # 8. Scope
 
-## ⚠️ Key scope question (see callout at top of doc)
 Before filling this in for real: decide whether v1 is Asaf's focused planning-canvas MVP, with Idan's broader platform features as later phases — or whether you're building toward the full platform (and competing head-on with Wanderlog — see §8.3) from day one. The lists below are drafted assuming the *phased* approach (Asaf's MVP = in scope now, Idan's broader items = later), but that's an assumption, not a decision.
 
 ## 8.1 In Scope (draft — Asaf's MVP)
@@ -186,8 +180,6 @@ Worth reading alongside the scope question above: **Wanderlog** already does a v
 ---
 
 # 9. Core Objects / Data Model (conceptual)
-
-*Unique contribution from Asaf's doc — Idan's PRD doesn't yet define a data model. Worth reviewing together, especially if broader-platform items (bookings, expenses, collaboration) end up in scope, since those will need their own entities.*
 
 - **Place** — anything the user is interested in (Attraction, Restaurant, Hotel, City, Hike, etc.)
 - **Activity** — a planned visit to a Place. Includes duration, preferred time, opening hours/constraints, priority, notes.
@@ -285,7 +277,7 @@ This lets the user run effortless "what if we did this tomorrow instead?" experi
 
 # 15. User Experience & Design
 
-**Asaf's core screen concept:** two connected spaces —
+Two connected spaces —
 - **Map** — interactive map showing all relevant places (Attractions, Restaurants, Hotels, Cities, Hikes, Viewpoints, other POIs), which can be color/style-coded by type, day, status, or area.
 - **Timeline / Trip Board** — a timeline divided by day, visually showing Travel → Activity → Travel → Activity → Hotel, with start time, duration, location, travel time, notes, and time constraints per activity.
 
@@ -316,10 +308,6 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 
 # 17. Dependencies
 
-| Dependency | Type (Internal / External / Third-Party API) | Owner | Status |
-| :--- | :--- | :--- | :--- |
-| [ ] | [ ] | [ ] | [ ] |
-
 ---
 
 # 18. Assumptions & Constraints
@@ -333,10 +321,6 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 ---
 
 # 19. Risks & Mitigations
-
-| Risk | Likelihood | Impact | Mitigation |
-| :--- | :--- | :--- | :--- |
-| [ ] | [Low/Med/High] | [Low/Med/High] | [ ] |
 
 ---
 
@@ -386,7 +370,6 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 - Functionality: drop places of interest onto a map, optimize routes, collaborate live with friends, manage travel budgets.
 - Platform: full data sync across Web, iOS, Android.
 - Pricing: freemium — core itinerary mapping/editing/collaboration is free; Pro unlocks offline access, email auto-forwarding, and direct export to Google Maps.
-- *Relevant to §21, Q2 — this is the closest existing product to both Asaf's canvas MVP and Idan's collaboration layer, and it's free.*
 
 **2. TripIt**
 - Core value: master itinerary automation for frequent/business travelers.
