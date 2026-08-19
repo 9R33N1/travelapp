@@ -2,8 +2,6 @@
 
 ## TravelApp *(temporary name)*
 
-> **How this document was built:** This merges two source docs — Idan's English PRD and Asaf's Hebrew concept doc (`asaf.txt`, translated to English below). Where both of you land on the same idea, it's combined into one version. Where you land on genuinely different ideas, both are shown as **Idan:** / **Asaf:** so you can decide together. Sections neither of you has written yet are left as `[ ]` placeholders. See the **Open Questions** section (§21) for the handful of things worth resolving before this goes further — the biggest one is a real scope fork, flagged right up front below.
-
 > ### ⚠️ Read this first — the core scope question
 > Asaf's doc describes a tightly scoped **map + timeline planning canvas**, with an MVP that explicitly avoids AI/automation and doesn't mention collaboration, booking, expenses, or real-time location.
 > Idan's PRD problem statement describes a much bigger **all-in-one trip platform** — covering collaboration, shared expenses, real-time location sharing, offline execution mode, weather, and post-trip archiving, in addition to planning. It's also already scoped against real competitors (Wanderlog, TripIt) that operate at that broader scale.
@@ -13,11 +11,7 @@
 
 # 1. Executive Summary
 
-*No shared executive summary has been written yet. Asaf's one-sentence product definition is included below as a starting draft — needs Idan's take and joint agreement.*
-
 **Asaf:** "A visual trip-planning workspace for Spatial + Temporal Planning that seamlessly connects geography and time—allowing travelers to explore places, group them into days, experiment with routes, and instantly understand the ripple effects of every planning decision."
-
-**Idan:** [ ]
 
 ---
 
@@ -50,11 +44,9 @@ Today, these two dimensions live in separate, disconnected tools:
 
 Because neither tool bridges space and time, the traveler's brain is forced to act as the manual calculation engine—juggling tabs, estimating drive times, recalculating day loads, and rebuilding itineraries from scratch whenever a plan changes.
 
-*(This isn't a contradiction of Idan's framing — it's a sharper articulation of the core cognitive friction in points 1 and 4 above.)*
-
 ---
 
-# 3. Target Platforms — *Idan*
+# 3. Target Platforms
 
 Three primary platforms, for a seamless experience across devices:
 
@@ -62,13 +54,9 @@ Three primary platforms, for a seamless experience across devices:
 2. **Android App** — a mobile-first companion for execution, real-time navigation, and on-the-go updates.
 3. **iPhone App** — a mobile-first companion for execution, real-time navigation, and on-the-go updates.
 
-*(Note: this web-for-planning / mobile-for-execution split lines up with Asaf's implicit assumption that the planning canvas is a deep, desktop-caliber workspace — worth confirming explicitly.)*
-
 ---
 
 # 4. Product Vision & Principles
-
-**Idan:** [ ]
 
 **Asaf — Vision:** A visual tool designed specifically for **Spatial + Temporal Planning**—letting a traveler build a trip as an interactive planning board that seamlessly connects geography (space) and timeline (time). Users add places of interest, visualize them on the map, cluster them into days, and dynamically "play" with their schedule. The product answers the five core spatial-temporal questions simultaneously:
 - **Spatial awareness:** What's near what?
@@ -98,7 +86,6 @@ Three primary platforms, for a seamless experience across devices:
 - [ ]
 
 ## 6.2 User Goals
-*(Derived from Asaf's list of questions in §4 — draft, needs confirmation from both)*
 - Quickly understand the geographic structure of a trip (what's near what)
 - Quickly understand whether a given day is realistic or overloaded
 - Be able to change the plan (move something to another day) and immediately see the impact, without manually redoing the route
@@ -108,15 +95,12 @@ Three primary platforms, for a seamless experience across devices:
 ## 6.3 Non-Goals
 **Asaf:** The MVP is explicitly *not* an "AI Travel Planner" — it should not fully auto-generate an itinerary or make decisions for the user without their control.
 
-**Idan:** [ ]
-
 ---
 
 # 7. Success Metrics / KPIs
 
 | Goal | Metric / KPI | Target | Measurement Source |
 | :--- | :--- | :--- | :--- |
-| [ ] | [ ] | [ ] | [ ] |
 | [ ] | [ ] | [ ] | [ ] |
 
 **Asaf — qualitative success criteria** *(not yet expressed as measurable KPIs — worth converting into the table above once you agree on targets):*
@@ -164,12 +148,12 @@ Before filling this in for real: decide whether v1 is Asaf's focused planning-ca
 | Weather & local-event awareness (closures, wildfires, accidents) | Idan |
 | Post-trip archiving / actuals-vs-plan | Idan |
 
-## 8.3 Competitive context — *Idan*
+## 8.3 Competitive context
 Worth reading alongside the scope question above: **Wanderlog** already does a version of both the map+timeline canvas (Asaf's MVP) *and* the collaboration/route-optimization layer (Idan's broader scope), free, across Web/iOS/Android. **TripIt** competes on a different axis — automated itinerary building from forwarded confirmation emails, aimed at frequent/business travelers, monetizing via real-time flight alerts. Neither doc currently states a differentiated wedge against Wanderlog specifically — that's worth a direct answer before locking scope. Full detail in §22.2.
 
 ---
 
-# 9. Core Objects / Data Model (conceptual) — *Asaf*
+# 9. Core Objects / Data Model (conceptual)
 
 *Unique contribution from Asaf's doc — Idan's PRD doesn't yet define a data model. Worth reviewing together, especially if broader-platform items (bookings, expenses, collaboration) end up in scope, since those will need their own entities.*
 
@@ -183,11 +167,8 @@ Worth reading alongside the scope question above: **Wanderlog** already does a v
 
 # 10. User Journeys
 
-*(Idan's four journeys, with Journey 1 expanded using Asaf's step-by-step planning flow.)*
-
 1. **Planning & Preparation** — initial discovery and (if in scope) collaborative phase where users research destinations, build the itinerary, and manage bookings.
 
-   **Asaf's detailed flow for this phase:**
    1. **Explore** — user adds/collects places of interest
    2. **Map** — all places appear on the map to reveal the geographic structure
    3. **Cluster** — user identifies or creates geographic groupings (D1, D2, D3, ...)
@@ -205,7 +186,7 @@ Worth reading alongside the scope question above: **Wanderlog** already does a v
 
 ---
 
-# 11. Key Interaction Principle — *Asaf*
+# 11. Key Interaction Principle
 
 **"Every change should be visible in both space and time."**
 
@@ -312,9 +293,7 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 # 18. Assumptions & Constraints
 
 ## Assumptions
-**Asaf:** Users don't necessarily want the system to fully build the trip for them — they want control over planning, with the system providing information, calculations, and consequences.
-
-**Idan:** [ ]
+- Users don't necessarily want the system to fully build the trip for them — they want control over planning, with the system providing information, calculations, and consequences.
 
 ## Constraints
 - [ ]
@@ -357,7 +336,7 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 
 # 22. Appendix
 
-## 22.1 Current Tools & Solutions Ecosystem *(merged)*
+## 22.1 Current Tools & Solutions Ecosystem 
 - **Navigation & Mapping** (e.g., Google Maps) — route optimization, discovery and recommendations (lodging, points of interest, dining), real-time location sharing, turn-by-turn navigation. Strong for navigation and point lookups; weaker for early-stage, pre-itinerary planning. *(Idan + Asaf)*
 - **Email clients** (e.g., Gmail) — central repository for travel confirmation details: flights, hotel reservations, rental cars *(Idan)*
 - **Note-taking apps** (e.g., Google Keep) — quick notes, lists, informal recommendations
@@ -368,7 +347,7 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 - **Rideshare services** — local transportation and point-to-point transit booking
 - **Printed maps** — still used in practice for early-stage planning *(Asaf)*
 
-## 22.2 Market Landscape & Core Competitors — *Idan*
+## 22.2 Market Landscape & Core Competitors
 
 **1. Wanderlog**
 - Core value: closest thing to "Google Docs for travel" — combines chronological day-by-day itineraries with a live interactive map.
@@ -383,7 +362,7 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 - Platform: Web dashboard, iOS, Android.
 - Pricing: freemium — automated email parsing and basic timelines are free; TripIt Pro adds real-time flight delay alerts, gate changes, alternate flight finder.
 
-## 22.3 Future Direction — post-MVP intelligence layer *(Asaf, aligns with Idan's problem-statement point on dynamic intelligence — see §21, Q3)*
+## 22.3 Future Direction — post-MVP intelligence layer
 - Suggested groupings of attractions
 - Suggested lodging locations
 - Detection of overloaded days
