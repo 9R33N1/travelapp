@@ -11,38 +11,34 @@
 
 # 1. Executive Summary
 
-**Asaf:** "A visual trip-planning workspace for Spatial + Temporal Planning that seamlessly connects geography and time—allowing travelers to explore places, group them into days, experiment with routes, and instantly understand the ripple effects of every planning decision."
+A comprehensive trip workspace and intelligent travel companion covering the entire trip lifecycle. It seamlessly connects geography (space) and timeline (time)—empowering travelers to intuitively explore and build itineraries before the trip, navigate and execute on the road as an active guide, collaborate effortlessly with co-travelers, and dynamically adapt to real-time changes or intelligent suggestions on the fly.
 
 ---
 
 # 2. Problem Statement
 
-## 2.1 Shared framing (Idan)
+Planning and executing a trip is an exercise in tool fragmentation, cognitive overload, and rigid static plans. Travelers lack a unified platform that acts as a single source of truth across the full trip lifecycle—from pre-trip discovery and collaborative itinerary design to in-trip execution, dynamic adaptation, and post-trip reflection. This fragmentation creates hurdles throughout every stage of the journey:
 
-Planning a trip is an exercise in app juggling: research lives in chats, itineraries in spreadsheets, and navigation in map apps. Travelers lack a unified platform that acts as a single source of truth for all trip-related data — including flights, accommodations, transportation, weather forecasts, maps, dining, and activity recommendations. This fragmentation creates hurdles throughout the trip lifecycle:
+1. **Tool Fragmentation & Context Switching** — Travelers cobble together disparate tools across different phases—maps for geography, sheets for itineraries, messaging apps for collaboration, other apps for weather and safety alerts. This forces manual, redundant effort and makes it hard to keep one cohesive, up-to-date plan accessible at a glance.
 
-1. **Tool Fragmentation & Context Switching** — Travelers cobble together disparate tools to organize a trip — maps for geography, sheets for itineraries, messaging apps for collaboration, other apps for weather and safety alerts. This forces manual, redundant effort and makes it hard to keep one cohesive plan accessible at a glance.
+2. **The Core Planning Problem: Spatial + Temporal Disconnect** — What travelers actually do today during trip planning is fundamentally a process of **Spatial + Temporal Planning**. They are constantly attempting to solve a multi-dimensional puzzle simultaneously:
+   - **Spatial awareness (Where things are):** Understanding the geographic layout of attractions, dining, viewpoints, and transit points.
+   - **Temporal constraints (How long they take):** Accounting for visit durations, opening/operating hours, and realistic travel times between stops.
+   - **Clustering & Flow (What can be grouped together):** Identifying which POIs logically belong on the same day to minimize transit overhead.
+   - **Lodging Anchors (Where to stay):** Deciding where it makes strategic sense to sleep based on the evolving itinerary, rather than picking hotels in a vacuum.
+   - **Ripple Effects (What happens when something moves):** Understanding the cascading consequences on travel time, day feasibility, and lodging when any single item is added, moved, or rescheduled.
 
-2. **The "Planning vs. Execution" Usability Gap** — Planning often happens on desktop; execution happens on mobile, often with limited connectivity. Current tools offer weak offline support, leaving travelers stranded without itinerary or navigation details. Desktop-first planning documents also don't translate well to mobile screens on the move.
+   Today, these two dimensions live in separate, disconnected tools:
+   - **The geographic dimension** lives in navigation/map apps (e.g., Google Maps), which are great for point lookups and navigation but weak for early, flexible, pre-itinerary planning.
+   - **The temporal dimension** lives in spreadsheets, calendar apps, or text notes, which track days and times but lack spatial awareness and automatic routing feedback.
 
-3. **Collaborative & Social Friction** — Sharing trip plans stays disjointed, buried in long messaging threads or static emails. Coordinating changes, tracking shared expenses (and pay-back calculations), and managing real-time location sharing during the trip creates logistical friction and social tension.
+   Because neither tool bridges space and time, the traveler's brain is forced to act as the manual calculation engine—juggling tabs, estimating drive times, recalculating day loads, and rebuilding itineraries from scratch whenever a plan changes.
 
-4. **Lack of Dynamic & Contextual Intelligence** — Travelers operate with static plans that can't adapt to the real world. Missing: **dynamic route planning** that factors in drive times, daily limits, and accommodation needs; **real-time intelligence** — proactive, AI-generated recommendations based on preferences, current weather, and local events (road closures, wildfires, accidents); **fluid adjustment** — the ability to adjust routes/plans on the fly without manually reconstructing the itinerary.
+3. **Collaborative & Social Friction** — Sharing trip plans stays disjointed, buried in long messaging threads or static emails. Collecting traveler feedback and suggestions during the planning phase is messy. Coordinating changes during the trip, tracking shared expenses (and pay-back calculations), and managing real-time location sharing during the trip creates logistical friction and social tension.
 
-## 2.2 Core Planning Dynamics: Spatial + Temporal Planning (Asaf)
+4. **The "Planning vs. Execution" Usability Gap** — Planning often happens on desktop; execution happens on mobile, often with limited connectivity. Current tools offer weak offline support, leaving travelers stranded without itinerary or navigation details. Desktop-first planning documents also don't translate well to actionable mobile companions on the move.
 
-What travelers actually do today during trip planning is fundamentally a process of **Spatial + Temporal Planning**. They are constantly attempting to solve a multi-dimensional puzzle simultaneously:
-- **Spatial awareness (Where things are):** Understanding the geographic layout of attractions, dining, viewpoints, and transit points.
-- **Temporal constraints (How long they take):** Accounting for visit durations, opening/operating hours, and realistic travel times between stops.
-- **Clustering & Flow (What can be grouped together):** Identifying which POIs logically belong on the same day to minimize transit overhead.
-- **Lodging Anchors (Where to stay):** Deciding where it makes strategic sense to sleep based on the evolving itinerary, rather than picking hotels in a vacuum.
-- **Ripple Effects (What happens when something moves):** Understanding the cascading consequences on travel time, day feasibility, and lodging when any single item is added, moved, or rescheduled.
-
-Today, these two dimensions live in separate, disconnected tools:
-- **The geographic dimension** lives in navigation/map apps (e.g., Google Maps), which are great for point lookups and navigation but weak for early, flexible, pre-itinerary planning.
-- **The temporal dimension** lives in spreadsheets, calendar apps, or text notes, which track days and times but lack spatial awareness and automatic routing feedback.
-
-Because neither tool bridges space and time, the traveler's brain is forced to act as the manual calculation engine—juggling tabs, estimating drive times, recalculating day loads, and rebuilding itineraries from scratch whenever a plan changes.
+5. **Lack of In-Trip Dynamic Adaptation & Real-Time Intelligence** — Once on the road, travelers operate with static plans that cannot adapt to real-world disruptions (delays, fatigue, weather shifts, traffic, attraction closures, or spontaneous discoveries). Missing: an active companion that can serve as a live guide for the planned route while also offering **fluid real-time adjustment**—calculating the cascading ripple effects of in-trip deviations, and proactively generating contextual recommendations and alternative options without requiring the traveler to manually rebuild their schedule.
 
 ---
 
@@ -58,16 +54,38 @@ Three primary platforms, for a seamless experience across devices:
 
 # 4. Product Vision & Principles
 
-**Asaf — Vision:** A visual tool designed specifically for **Spatial + Temporal Planning**—letting a traveler build a trip as an interactive planning board that seamlessly connects geography (space) and timeline (time). Users add places of interest, visualize them on the map, cluster them into days, and dynamically "play" with their schedule. The product answers the five core spatial-temporal questions simultaneously:
+## 4.1 Product Vision: Full Lifecycle Travel Platform
+
+A unified visual workspace and intelligent companion designed for **Spatial + Temporal Continuity** across the entire trip lifecycle. The product bridges geography (space) and timeline (time) from initial discovery to on-the-road execution and beyond, directly solving the core problems identified in §2:
+
+### 1. Pre-Trip: Spatial + Temporal Planning Canvas
+An interactive planning board where travelers and groups explore places of interest, visualize them on a map, cluster them into logical days, and dynamically experiment with routes. The system continuously answers the five core planning questions:
 - **Spatial awareness:** What's near what?
-- **Clustering:** Which places make sense to do on the same day?
-- **Lodging anchors:** Where should I stay based on the route?
-- **Temporal budget:** How long will each day take, how much time is lost to transit, and is the day overloaded?
-- **Ripple effects:** What happens across the whole route if I move an attraction or change where I sleep?
+- **Clustering & Flow:** Which places make sense to group on the same day?
+- **Lodging anchors:** Where should I stay based on the evolving route?
+- **Temporal budget:** How long will each day take, how much time is lost to transit, and is the day feasible or overloaded?
+- **Ripple effects:** What happens across the entire schedule when an attraction moves or a stay changes?
 
-**Asaf — Key principle:** *"The product should optimize the user's thinking, not replace it."* Instead of saying "here's your optimal trip," the product should say something like: "If you do these things today, it'll take 8h20m, of which 2h10m is travel, leaving you 1 free hour." The system isn't meant to decide the trip for the user — it's meant to give them information, calculations, and consequences so *they* can decide.
+### 2. In-Trip: Execution, Live Guide & Adaptive Co-Pilot
+A responsive, mobile-first companion (with robust offline capability) that supports travelers on the road in two vital modes:
+- **Live Guide for the Original Plan:** Provides seamless execution—guiding travelers from activity to transit to lodging with turn-by-turn routing, timing context, and rapid access to notes and reservations.
+- **Dynamic Real-Time Adaptation & Suggestions:** When reality diverges from the plan (weather shifts, unexpected closures, delays, fatigue, or spontaneous opportunities), the system acts as an adaptive co-pilot. It lets travelers modify the plan on the fly with instant recalculation of ripple effects, while proactively suggesting contextual alternatives and route adjustments to save the day without manual recalculation stress.
 
-> Note: this principle sits in some tension with Idan's problem-statement point on "proactive, AI-generated recommendations" (§2.1, point 4). Not a hard contradiction — Asaf frames intelligence/automation as a later layer on top of a user-controlled core, not a core MVP feature. Worth aligning on explicitly — see §21.
+### 3. Post-Trip: Archiving & Resolution
+A clean closure experience that records actual routes and visited places vs. the original plan, preserves trip memories, and resolves shared group expenses seamlessly.
+
+---
+
+## 4.2 Key Product Principles
+
+1. **"Every change is visible in both space and time."**
+   Whether reordering days during desktop planning or pushing back an afternoon activity on mobile while stuck in traffic, changes immediately reflect across both the map and the timeline with updated drive times, day loads, and feasibility indicators.
+
+2. **"Optimize and augment the user's thinking, not replace it."**
+   The product is built to give travelers clarity, control, and empowerment. Instead of acting as an opaque "black box" that dictates an inflexible schedule, the system provides real-time calculations, consequences, and proactive suggestions so *the user* makes informed choices (e.g., *"If you stay 1 more hour here, you'll arrive after closing time at stop #4 — here are 2 alternate indoor spots nearby"*).
+
+3. **"Seamless Desktop Planning to In-Pocket Execution."**
+   A unified data model ensures that the rich, expressive plan created on the web seamlessly flows into a high-utility, resilient (offline-ready) mobile companion on the go.
 
 ---
 
@@ -75,8 +93,8 @@ Three primary platforms, for a seamless experience across devices:
 
 | Persona | Description | Key Needs | Pain Points |
 | :--- | :--- | :--- | :--- |
-| **Solo backpacker / independent multi-day traveler** *(Idan's persona, filled in with Asaf's description)* | Plans trips of several days or more — road trips, multi-city/region trips, trips with many attractions, trips where geography matters a lot to the plan. Wants control over the plan, not the system building the trip for them. | Understand the geographic structure of a trip quickly; understand daily load quickly; compare alternatives; change the route without redoing manual work | Juggling maps, spreadsheets, and notes; hard to tell what's realistic to fit in a day; losing track of travel-time cost between stops |
-| **Group travelers** *(Idan)* | [ ] *(Idan's persona — description not yet written; likely tied to the collaboration/expense-splitting features in §2.1(3), which are outside Asaf's MVP — see §8)* | [ ] | [ ] |
+| **Solo backpacker / independent multi-day traveler** *(Idan's persona, filled in with Asaf's description)* | Plans trips of several days or more — road trips, multi-city/region trips, trips with many attractions, trips where geography matters a lot to the plan. Wants control over the plan, not the system building the trip for them. | Understand the geographic structure of a trip quickly; understand daily load quickly; compare alternatives; change the route without redoing manual work; reliable guide on the road | Juggling maps, spreadsheets, and notes; hard to tell what's realistic to fit in a day; losing track of travel-time cost between stops; difficulty adapting when plans change on-trip |
+| **Group travelers** *(Idan)* | [ ] *(Idan's persona — description not yet written; likely tied to the collaboration/expense-splitting features in §2(3), which are outside Asaf's MVP — see §8)* | [ ] | [ ] |
 
 ---
 
@@ -86,11 +104,12 @@ Three primary platforms, for a seamless experience across devices:
 - [ ]
 
 ## 6.2 User Goals
-- Quickly understand the geographic structure of a trip (what's near what)
-- Quickly understand whether a given day is realistic or overloaded
-- Be able to change the plan (move something to another day) and immediately see the impact, without manually redoing the route
-- Compare multiple route/day alternatives before committing
-- Decide where to stay based on the plan, not the other way around
+- **Pre-Trip:** Quickly understand the geographic structure of a trip and evaluate if days are realistic or overloaded.
+- **Pre-Trip:** Experiment with routes, cluster activities, align lodging, and see ripple effects instantly without manual rework.
+- **Pre-Trip:** Compare multiple route/day alternatives before committing.
+- **In-Trip:** Rely on a clear, offline-ready mobile guide for navigation, timing, and daily schedule execution.
+- **In-Trip:** Adapt effortlessly to real-time changes (delays, weather, closures) with instant schedule recalculation and intelligent alternative suggestions.
+- **Post-Trip:** Review trip actuals and resolve shared expenses without friction.
 
 ## 6.3 Non-Goals
 **Asaf:** The MVP is explicitly *not* an "AI Travel Planner" — it should not fully auto-generate an itinerary or make decisions for the user without their control.
@@ -230,8 +249,8 @@ This lets the user run effortless "what if we did this tomorrow instead?" experi
 | FR-10 | Two-way sync: changes on the map reflect on the timeline and vice versa | [ ] | [ ] | Asaf — MVP |
 | FR-11 | Day load / feasibility indicator | [ ] | [ ] | Asaf — MVP |
 | FR-12 | Instant recalculation of route/time impact when the plan changes | [ ] | [ ] | Asaf — MVP |
-| FR-13 | Dynamic route planning factoring in drive times, daily limits, and lodging needs | [ ] | [ ] | Idan — problem statement §2.1(4). Overlaps with Asaf's "Future Direction" list — likely the same feature described from two angles. |
-| FR-14 | Proactive recommendations based on preferences, weather, and local events | [ ] | [ ] | Idan — problem statement §2.1(4). Same overlap as above. |
+| FR-13 | Dynamic route planning factoring in drive times, daily limits, and lodging needs | [ ] | [ ] | Idan — problem statement §2(5). Overlaps with Asaf's "Future Direction" list — likely the same feature described from two angles. |
+| FR-14 | Proactive recommendations based on preferences, weather, and local events | [ ] | [ ] | Idan — problem statement §2(5). Same overlap as above. |
 | FR-15 | [ ] | [ ] | [ ] | [ ] |
 
 ---
