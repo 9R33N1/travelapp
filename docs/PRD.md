@@ -9,17 +9,6 @@
 > Idan's PRD problem statement describes a much bigger **all-in-one trip platform** — covering collaboration, shared expenses, real-time location sharing, offline execution mode, weather, and post-trip archiving, in addition to planning. It's also already scoped against real competitors (Wanderlog, TripIt) that operate at that broader scale.
 > Both are valid products, but they're different bets on what to build first — and notably, Idan's own competitive analysis (§8.3) shows Wanderlog already does something close to Asaf's MVP *and* the collaboration layer. Worth discussing directly. Called out again in §21.
 
-| Field | Details |
-| :--- | :--- |
-| **Product / Feature Name** | TravelApp (temp) / Trip Planning Canvas (temp) |
-| **Document Owner** | [Name, role] |
-| **Status** | Draft — merged from two source docs, pending alignment |
-| **Version** | [v0.1] |
-| **Last Updated** | [Date] |
-| **Platforms** | Web, iOS, Android |
-| **Stakeholders** | Idan, Asaf, [+ Design, Engineering, QA, Marketing, ...] |
-| **Source Documents** | Idan — `TravelApp_PRD.pdf`; Asaf — `asaf.txt` ("Trip Planning Canvas", translated from Hebrew) |
-
 ---
 
 # 1. Executive Summary
