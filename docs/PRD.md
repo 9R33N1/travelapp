@@ -51,38 +51,14 @@ Three primary platforms, for a seamless experience across devices:
 
 ## 4.1 Product Vision: Full Lifecycle Travel Platform
 
-A unified visual workspace and intelligent companion built on **Spatial + Temporal Continuity** across the entire trip lifecycle. The product bridges geography (space) and timeline (time)—taking travelers seamlessly from initial inspiration to on-the-road execution and beyond. It directly addresses the problems identified in §2 across all core lifecycle stages:
+TravelApp is a single workspace that keeps a trip's geography and timeline in sync — from the first place a traveler saves, through planning with co-travelers, through execution on the road, to looking back afterward. Instead of a plan going stale the moment it's written, the product treats it as something living: every edit, whether made on a desktop map weeks before departure or on a phone mid-trip, updates the same underlying model and is immediately reflected everywhere.
 
-### 1. Stage 1: Pre-Trip Planning (Spatial + Temporal Canvas)
-An intuitive, interactive planning board where travelers explore places of interest, visualize them on a map, cluster them into logical days, and dynamically experiment with routes. The system continuously resolves the core planning puzzle:
-- **Spatial Awareness:** Understanding what is near what across destinations.
-- **Clustering & Flow:** Grouping places logically into daily schedules to minimize transit waste.
-- **Lodging Anchors:** Strategically placing accommodations based on the route rather than booking in isolation.
-- **Temporal Feasibility:** Calculating transit times, activity durations, and free time to instantly surface whether a day is balanced or overloaded.
-- **Ripple Effects:** Visualizing cascading impacts across the itinerary whenever an attraction or stay is moved, added, or deleted.
+Four ideas anchor that:
 
-### 2. Stage 2: Sharing & Collaborative Co-Creation (Social Synchronization)
-A single source of truth that eliminates disjointed chat threads, scattered links, and messy spreadsheets:
-- **Pre-Trip Collaboration:** Co-creating itineraries with co-travelers, allowing group members to propose places, vote on activities, and view changes in real time.
-- **Shared Budget & Expense Tracking:** Built-in tracking for group expenses, split costs, and automated pay-back calculations.
-- **In-Trip Social Coordination:** Seamless sharing of live locations, itineraries, and meeting points among travel companions to remove logistical friction on the road.
-
-### 3. Stage 3: Actual Trip & Live Execution (In-Pocket Mobile & Offline Guide)
-Bridging the desktop-to-mobile usability gap with a high-utility, mobile-first travel companion:
-- **Robust Offline Resilience:** Full access to maps, schedules, notes, and bookings in areas with limited or no cellular connectivity.
-- **Active Itinerary Execution:** Guiding travelers smoothly from activity to transit to lodging with turn-by-turn routing, timing context, and daily progress tracking.
-- **Contextual Access:** Storing all confirmation details, tickets, and location-specific notes directly where and when they are needed.
-
-### 4. Stage 4: Run-Time Adjustments & Dynamic Adaptation (Adaptive In-Trip Co-Pilot)
-Empowering travelers when reality inevitably diverges from the plan (weather shifts, unexpected closures, delays, traffic, fatigue, or spontaneous opportunities):
-- **Fluid On-The-Fly Editing:** Allowing travelers to easily swap, postpone, or drop activities with instant recalculation of ripple effects across the rest of the day and trip.
-- **Contextual Real-Time Intelligence:** Proactively suggesting smart alternatives (e.g., indoor activities during sudden rain, nearby dining recommendations, detour adjustments for road closures) without forcing travelers to manually rebuild their plans.
-
-### 5. Stage 5: Post-Trip Reflection & Archiving (Resolution & Memory Canvas)
-A clean closure experience to wrap up the journey:
-- **Actuals vs. Plan:** Preserving the recorded route, actual timeline, and visited places for memories or future reference.
-- **Financial Settlement:** Finalizing shared expense balances and exportable summaries.
-- **Reusability:** Transforming past trips into reusable templates or shareable recommendations for friends and the community.
+- **Space and time are one model, not two.** Where things are and how long they take are calculated together, always — never a map view and a schedule view that can drift out of sync.
+- **Planning and execution are the same product, not a handoff.** The itinerary a traveler builds on the web is the same one that guides them on mobile, offline if needed — no export, no rebuild.
+- **Collaboration is built in, not bolted on.** A trip has one shared source of truth co-travelers plan, coordinate, and split costs against, rather than reconstructing the plan across chats and spreadsheets.
+- **The system informs; the traveler decides.** It surfaces consequences and alternatives — never silently auto-generates or overrides the plan.
 
 ---
 
