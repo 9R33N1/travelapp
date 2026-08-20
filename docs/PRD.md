@@ -51,38 +51,14 @@ Three primary platforms, for a seamless experience across devices:
 
 ## 4.1 Product Vision: Full Lifecycle Travel Platform
 
-A unified visual workspace and intelligent companion built on **Spatial + Temporal Continuity** across the entire trip lifecycle. The product bridges geography (space) and timeline (time)—taking travelers seamlessly from initial inspiration to on-the-road execution and beyond. It directly addresses the problems identified in §2 across all core lifecycle stages:
+TravelApp is a single workspace that keeps a trip's geography and timeline in sync — from the first place a traveler saves, through planning with co-travelers, through execution on the road, to looking back afterward. Instead of a plan going stale the moment it's written, the product treats it as something living: every edit, whether made on a desktop map weeks before departure or on a phone mid-trip, updates the same underlying model and is immediately reflected everywhere.
 
-### 1. Stage 1: Pre-Trip Planning (Spatial + Temporal Canvas)
-An intuitive, interactive planning board where travelers explore places of interest, visualize them on a map, cluster them into logical days, and dynamically experiment with routes. The system continuously resolves the core planning puzzle:
-- **Spatial Awareness:** Understanding what is near what across destinations.
-- **Clustering & Flow:** Grouping places logically into daily schedules to minimize transit waste.
-- **Lodging Anchors:** Strategically placing accommodations based on the route rather than booking in isolation.
-- **Temporal Feasibility:** Calculating transit times, activity durations, and free time to instantly surface whether a day is balanced or overloaded.
-- **Ripple Effects:** Visualizing cascading impacts across the itinerary whenever an attraction or stay is moved, added, or deleted.
+Four ideas anchor that:
 
-### 2. Stage 2: Sharing & Collaborative Co-Creation (Social Synchronization)
-A single source of truth that eliminates disjointed chat threads, scattered links, and messy spreadsheets:
-- **Pre-Trip Collaboration:** Co-creating itineraries with co-travelers, allowing group members to propose places, vote on activities, and view changes in real time.
-- **Shared Budget & Expense Tracking:** Built-in tracking for group expenses, split costs, and automated pay-back calculations.
-- **In-Trip Social Coordination:** Seamless sharing of live locations, itineraries, and meeting points among travel companions to remove logistical friction on the road.
-
-### 3. Stage 3: Actual Trip & Live Execution (In-Pocket Mobile & Offline Guide)
-Bridging the desktop-to-mobile usability gap with a high-utility, mobile-first travel companion:
-- **Robust Offline Resilience:** Full access to maps, schedules, notes, and bookings in areas with limited or no cellular connectivity.
-- **Active Itinerary Execution:** Guiding travelers smoothly from activity to transit to lodging with turn-by-turn routing, timing context, and daily progress tracking.
-- **Contextual Access:** Storing all confirmation details, tickets, and location-specific notes directly where and when they are needed.
-
-### 4. Stage 4: Run-Time Adjustments & Dynamic Adaptation (Adaptive In-Trip Co-Pilot)
-Empowering travelers when reality inevitably diverges from the plan (weather shifts, unexpected closures, delays, traffic, fatigue, or spontaneous opportunities):
-- **Fluid On-The-Fly Editing:** Allowing travelers to easily swap, postpone, or drop activities with instant recalculation of ripple effects across the rest of the day and trip.
-- **Contextual Real-Time Intelligence:** Proactively suggesting smart alternatives (e.g., indoor activities during sudden rain, nearby dining recommendations, detour adjustments for road closures) without forcing travelers to manually rebuild their plans.
-
-### 5. Stage 5: Post-Trip Reflection & Archiving (Resolution & Memory Canvas)
-A clean closure experience to wrap up the journey:
-- **Actuals vs. Plan:** Preserving the recorded route, actual timeline, and visited places for memories or future reference.
-- **Financial Settlement:** Finalizing shared expense balances and exportable summaries.
-- **Reusability:** Transforming past trips into reusable templates or shareable recommendations for friends and the community.
+- **Space and time are one model, not two.** Where things are and how long they take are calculated together, always — never a map view and a schedule view that can drift out of sync.
+- **Planning and execution are the same product, not a handoff.** The itinerary a traveler builds on the web is the same one that guides them on mobile, offline if needed — no export, no rebuild.
+- **Collaboration is built in, not bolted on.** A trip has one shared source of truth co-travelers plan, coordinate, and split costs against, rather than reconstructing the plan across chats and spreadsheets.
+- **The system informs; the traveler decides.** It surfaces consequences and alternatives — never silently auto-generates or overrides the plan.
 
 ---
 
@@ -106,8 +82,8 @@ A clean closure experience to wrap up the journey:
 
 | Persona | Description | Key Needs | Pain Points |
 | :--- | :--- | :--- | :--- |
-| **Solo backpacker / independent multi-day traveler** *(Idan's persona, filled in with Asaf's description)* | Plans trips of several days or more — road trips, multi-city/region trips, trips with many attractions, trips where geography matters a lot to the plan. Wants control over the plan, not the system building the trip for them. | Understand the geographic structure of a trip quickly; understand daily load quickly; compare alternatives; change the route without redoing manual work; reliable guide on the road | Juggling maps, spreadsheets, and notes; hard to tell what's realistic to fit in a day; losing track of travel-time cost between stops; difficulty adapting when plans change on-trip |
-| **Group travelers** *(Idan)* | [ ] *(Idan's persona — description not yet written; likely tied to the collaboration/expense-splitting features in §2(3), which are outside Asaf's MVP — see §8)* | [ ] | [ ] |
+| **Solo backpacker / independent multi-day traveler** | Plans trips of several days or more — road trips, multi-city/region trips, trips with many attractions, trips where geography matters a lot to the plan. Wants control over the plan, not the system building the trip for them. | Understand the geographic structure of a trip quickly; understand daily load quickly; compare alternatives; change the route without redoing manual work; reliable guide on the road | Juggling maps, spreadsheets, and notes; hard to tell what's realistic to fit in a day; losing track of travel-time cost between stops; difficulty adapting when plans change on-trip |
+| **Group travelers** | [ ]  | [ ] | [ ] |
 
 ---
 
@@ -125,17 +101,12 @@ A clean closure experience to wrap up the journey:
 - **Post-Trip:** Review trip actuals and resolve shared expenses without friction.
 
 ## 6.3 Non-Goals
-**Asaf:** The MVP is explicitly *not* an "AI Travel Planner" — it should not fully auto-generate an itinerary or make decisions for the user without their control.
+The MVP is explicitly *not* an "AI Travel Planner" — it should not fully auto-generate an itinerary or make decisions for the user without their control.
 
 ---
 
 # 7. Success Metrics / KPIs
 
-| Goal | Metric / KPI | Target | Measurement Source |
-| :--- | :--- | :--- | :--- |
-| [ ] | [ ] | [ ] | [ ] |
-
-**Asaf — qualitative success criteria** *(not yet expressed as measurable KPIs — worth converting into the table above once you agree on targets):*
 - How easily a user goes from "I have 30 places I'm interested in" to "I understand what this trip could look like"
 - Fast understanding of the trip's geographic structure
 - Fast understanding of each day's load
@@ -148,7 +119,6 @@ A clean closure experience to wrap up the journey:
 
 # 8. Scope
 
-## ⚠️ Key scope question (see callout at top of doc)
 Before filling this in for real: decide whether v1 is Asaf's focused planning-canvas MVP, with Idan's broader platform features as later phases — or whether you're building toward the full platform (and competing head-on with Wanderlog — see §8.3) from day one. The lists below are drafted assuming the *phased* approach (Asaf's MVP = in scope now, Idan's broader items = later), but that's an assumption, not a decision.
 
 ## 8.1 In Scope (draft — Asaf's MVP)
@@ -186,8 +156,6 @@ Worth reading alongside the scope question above: **Wanderlog** already does a v
 ---
 
 # 9. Core Objects / Data Model (conceptual)
-
-*Unique contribution from Asaf's doc — Idan's PRD doesn't yet define a data model. Worth reviewing together, especially if broader-platform items (bookings, expenses, collaboration) end up in scope, since those will need their own entities.*
 
 - **Place** — anything the user is interested in (Attraction, Restaurant, Hotel, City, Hike, etc.)
 - **Activity** — a planned visit to a Place. Includes duration, preferred time, opening hours/constraints, priority, notes.
@@ -285,7 +253,7 @@ This lets the user run effortless "what if we did this tomorrow instead?" experi
 
 # 15. User Experience & Design
 
-**Asaf's core screen concept:** two connected spaces —
+Two connected spaces —
 - **Map** — interactive map showing all relevant places (Attractions, Restaurants, Hotels, Cities, Hikes, Viewpoints, other POIs), which can be color/style-coded by type, day, status, or area.
 - **Timeline / Trip Board** — a timeline divided by day, visually showing Travel → Activity → Travel → Activity → Hotel, with start time, duration, location, travel time, notes, and time constraints per activity.
 
@@ -316,10 +284,6 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 
 # 17. Dependencies
 
-| Dependency | Type (Internal / External / Third-Party API) | Owner | Status |
-| :--- | :--- | :--- | :--- |
-| [ ] | [ ] | [ ] | [ ] |
-
 ---
 
 # 18. Assumptions & Constraints
@@ -333,10 +297,6 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 ---
 
 # 19. Risks & Mitigations
-
-| Risk | Likelihood | Impact | Mitigation |
-| :--- | :--- | :--- | :--- |
-| [ ] | [Low/Med/High] | [Low/Med/High] | [ ] |
 
 ---
 
@@ -386,7 +346,6 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 - Functionality: drop places of interest onto a map, optimize routes, collaborate live with friends, manage travel budgets.
 - Platform: full data sync across Web, iOS, Android.
 - Pricing: freemium — core itinerary mapping/editing/collaboration is free; Pro unlocks offline access, email auto-forwarding, and direct export to Google Maps.
-- *Relevant to §21, Q2 — this is the closest existing product to both Asaf's canvas MVP and Idan's collaboration layer, and it's free.*
 
 **2. TripIt**
 - Core value: master itinerary automation for frequent/business travelers.
