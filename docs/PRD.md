@@ -197,22 +197,20 @@ This lets the user run effortless "what if we did this tomorrow instead?" experi
 
 ---
 
-# 12. Functional Requirements
+# 12. Functional Requirements *(MVP)*
 
-- **FR-01:** Create a trip *(MVP)*
-- **FR-02:** Add places to a trip *(MVP)*
-- **FR-03:** Display places on an interactive map *(MVP)*
-- **FR-04:** Create/manage days within a trip *(MVP)*
-- **FR-05:** Drag & drop places between days *(MVP)*
-- **FR-06:** Per-day timeline view (Travel → Activity → Travel → Activity → Hotel) *(MVP)*
-- **FR-07:** Automatic travel-time calculation between activities *(MVP)*
-- **FR-08:** Automatic duration & free-time calculation per day *(MVP)*
-- **FR-09:** Add hotels/stays, linked to one or more days *(MVP)*
-- **FR-10:** Two-way sync: changes on the map reflect on the timeline and vice versa *(MVP)*
-- **FR-11:** Day load / feasibility indicator *(MVP)*
-- **FR-12:** Instant recalculation of route/time impact when the plan changes *(MVP)*
-- **FR-13:** Dynamic route planning factoring in drive times, daily limits, and lodging needs *(Post-MVP)*
-- **FR-14:** Proactive recommendations based on preferences, weather, and local events *(Post-MVP)*
+- **FR-01:** Create a trip 
+- **FR-02:** Add places to a trip 
+- **FR-03:** Display places on an interactive map 
+- **FR-04:** Create/manage days within a trip 
+- **FR-05:** Drag & drop places between days 
+- **FR-06:** Per-day timeline view (Travel → Activity → Travel → Activity → Hotel) 
+- **FR-07:** Automatic travel-time calculation between activities 
+- **FR-08:** Automatic duration & free-time calculation per day 
+- **FR-09:** Add hotels/stays, linked to one or more days 
+- **FR-10:** Two-way sync: changes on the map reflect on the timeline and vice versa 
+- **FR-11:** Day load / feasibility indicator 
+- **FR-12:** Instant recalculation of route/time impact when the plan changes 
 
 ---
 
@@ -260,17 +258,13 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 
 ---
 
-# 16. Dependencies, Assumptions & Constraints
+# 16. Dependencies & Assumptions
 
 ## 16.1 Dependencies
 - Third-party mapping, routing, and geolocation services (e.g., Mapbox, Google Maps API).
-- [ ]
 
 ## 16.2 Assumptions
 - Users want control over planning, with the system providing information, calculations, and consequences rather than an automated black box that decides for them.
-
-## 16.3 Constraints
-- [ ]
 
 ---
 
