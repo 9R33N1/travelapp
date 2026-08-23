@@ -100,9 +100,6 @@ Four ideas anchor that:
 - **In-Trip:** Adapt effortlessly to real-time changes (delays, weather, closures) with instant schedule recalculation and intelligent alternative suggestions.
 - **Post-Trip:** Review trip actuals and resolve shared expenses without friction.
 
-## 5.3 Non-Goals
-The MVP is explicitly *not* an "AI Travel Planner" — it should not fully auto-generate an itinerary or make decisions for the user without their control.
-
 ---
 
 # 6. Target Platforms
@@ -174,11 +171,11 @@ Three primary platforms, for a seamless experience across devices:
    - **Commit:** The route stabilizes into a working itinerary.
    *(The experience is gradual and does not require a complete itinerary up front.)*
 
-2. **In-Transit / Execution** — active travel phase relying on navigation and schedule execution *(Phased post-MVP)*.
+2. **In-Transit / Execution** — active travel phase relying on navigation and schedule execution.
 
-3. **On-Trip Management** — daily experience during the trip: collaborative updates, expense tracking, real-time coordination *(Phased post-MVP)*.
+3. **On-Trip Management** — daily experience during the trip: collaborative updates, expense tracking, real-time coordination.
 
-4. **Post-Trip Reflection & Archiving** — capturing actuals vs. plan, finalizing expenses, saving memories *(Phased post-MVP)*.
+4. **Post-Trip Reflection & Archiving** — capturing actuals vs. plan, finalizing expenses, saving memories.
 
 ---
 
@@ -200,15 +197,7 @@ This lets the user run effortless "what if we did this tomorrow instead?" experi
 
 ---
 
-# 12. User Stories / Use Cases
-
-- **US-01:** As an independent traveler, I want to see all my saved places on a map so that I understand the geographic structure of my trip. *(Priority: Must)*
-- **US-02:** As an independent traveler, I want to drag a place from one day to another so that I can instantly see how it affects travel time and day load. *(Priority: Must)*
-- **US-03:** [ ]
-
----
-
-# 13. Functional Requirements
+# 12. Functional Requirements
 
 - **FR-01:** Create a trip *(MVP)*
 - **FR-02:** Add places to a trip *(MVP)*
@@ -224,11 +213,10 @@ This lets the user run effortless "what if we did this tomorrow instead?" experi
 - **FR-12:** Instant recalculation of route/time impact when the plan changes *(MVP)*
 - **FR-13:** Dynamic route planning factoring in drive times, daily limits, and lodging needs *(Post-MVP)*
 - **FR-14:** Proactive recommendations based on preferences, weather, and local events *(Post-MVP)*
-- **FR-15:** [ ]
 
 ---
 
-# 14. Non-Functional Requirements
+# 13. Non-Functional Requirements
 
 - **Performance:** [ ]
 - **Scalability:** [ ]
@@ -241,7 +229,7 @@ This lets the user run effortless "what if we did this tomorrow instead?" experi
 
 ---
 
-# 15. User Experience & Design
+# 14. User Experience & Design
 
 Two connected spaces:
 - **Map** — interactive map showing all relevant places (Attractions, Restaurants, Hotels, Cities, Hikes, Viewpoints, other POIs), color/style-coded by type, day, status, or area.
@@ -258,7 +246,7 @@ Two connected spaces:
 
 ---
 
-# 16. Technical Considerations
+# 15. Technical Considerations
 
 ## Architecture Overview
 [High-level architecture, link to technical design doc]
@@ -272,27 +260,27 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 
 ---
 
-# 17. Dependencies, Assumptions & Constraints
+# 16. Dependencies, Assumptions & Constraints
 
-## 17.1 Dependencies
+## 16.1 Dependencies
 - Third-party mapping, routing, and geolocation services (e.g., Mapbox, Google Maps API).
 - [ ]
 
-## 17.2 Assumptions
+## 16.2 Assumptions
 - Users want control over planning, with the system providing information, calculations, and consequences rather than an automated black box that decides for them.
 
-## 17.3 Constraints
+## 16.3 Constraints
 - [ ]
 
 ---
 
-# 18. Risks & Mitigations
+# 17. Risks & Mitigations
 
 - **Risk:** [ ] *(Likelihood: [Low/Med/High], Impact: [Low/Med/High], Mitigation: [ ])*
 
 ---
 
-# 19. Launch Plan
+# 18. Launch Plan
 
 ## Rollout Strategy
 [Phased rollout, beta, feature flags, regional launch, etc.]
@@ -302,23 +290,22 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 
 ---
 
-# 20. Open Questions
+# 19. Open Questions
 
-1. **Scope priority:** Do we build the focused planning-canvas MVP first, with broader platform features (collaboration, expenses, booking, real-time location, offline mode) as later phases — or design for the full platform from the start? *(Owner: Idan & Asaf, Status: Open)*
-2. **Competitive wedge:** Given Wanderlog already covers both the canvas and the collaboration layer for free — what is our differentiated wedge? *(Owner: Idan & Asaf, Status: Open)*
-3. **AI role:** Is any form of AI/automated recommendation part of the MVP, or strictly a post-MVP layer? *(Owner: Idan & Asaf, Status: Open)*
-4. **Collaboration:** Is multi-user collaboration (shared trip editing) in scope for v1? *(Owner: Idan & Asaf, Status: Open)*
-5. **Bookings:** Is live booking / email-parsed itinerary import (flights/hotels) in scope, or is the app planning-only? *(Owner: Idan & Asaf, Status: Open)*
-6. **Offline:** Is offline support required for launch, or can it come later? *(Owner: Idan & Asaf, Status: Open)*
-7. **Platforms:** Platform sequencing — build web first and add mobile after, or launch on all three together? *(Owner: Idan & Asaf, Status: Open)*
-8. **Monetization:** What is the monetization / business model? *(Owner: TBD, Status: Open)*
-9. [ ]
+1. **Scope priority:** Do we build the focused planning-canvas MVP first, with broader platform features (collaboration, expenses, booking, real-time location, offline mode) as later phases — or design for the full platform from the start?
+2. **Competitive wedge:** Given Wanderlog already covers both the canvas and the collaboration layer for free — what is our differentiated wedge? 
+3. **AI role:** Is any form of AI/automated recommendation part of the MVP, or strictly a post-MVP layer?
+4. **Collaboration:** Is multi-user collaboration (shared trip editing) in scope for v1?
+5. **Bookings:** Is live booking / email-parsed itinerary import (flights/hotels) in scope, or is the app planning-only?
+6. **Offline:** Is offline support required for launch, or can it come later?
+7. **Platforms:** Platform sequencing — build web first and add mobile after, or launch on all three together?
+8. **Monetization:** What is the monetization / business model?
 
 ---
 
-# 21. Appendix
+# 20. Appendix
 
-## 21.1 Current Tools & Solutions Ecosystem
+## 20.1 Current Tools & Solutions Ecosystem
 - **Navigation & Mapping** (e.g., Google Maps) — route optimization, discovery and recommendations (lodging, POIs, dining), real-time location sharing, turn-by-turn navigation. Strong for navigation and point lookups; weaker for early-stage, pre-itinerary planning.
 - **Email Clients** (e.g., Gmail) — central repository for travel confirmation details (flights, hotel reservations, rental cars).
 - **Note-Taking Apps** (e.g., Google Keep, Apple Notes) — quick notes, lists, informal recommendations.
@@ -330,7 +317,7 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 - **Rideshare Services** — local transportation and point-to-point transit booking.
 - **Printed Maps** — still used in practice for early-stage geographic planning.
 
-## 21.2 Market Landscape & Competitive Context
+## 20.2 Market Landscape & Competitive Context
 
 ### 1. Wanderlog
 - **Core Value:** Closest thing to "Google Docs for travel" — combines chronological day-by-day itineraries with a live interactive map.
@@ -351,9 +338,9 @@ List third-party services this app will depend on (e.g., maps, geolocation, trav
 - **Functionality:** Imports saved spots from Instagram, TikTok, Google Maps links, and screenshots and auto-detects the location; organizes them into shareable lists by city/vibe/trip; shows everything on a live map; then an AI itinerary builder generates a full day-by-day route from selected lists, dates, and destination. Supports inviting friends to a shared trip so co-travelers can each add their must-see spots before the AI builds the plan.
 - **Platform:** iOS live now; Android listed as "pre-order" (not yet launched).
 - **Pricing:** Free to download and save spots; Pro subscription (monthly/annual) required for unlimited AI itinerary generation. App Store and Play Store reviews raise recurring complaints about surprise annual charges after the free trial and generic/repetitive AI itinerary suggestions (e.g., over-clustering one activity type) — worth noting as a trust/pricing-transparency pitfall to avoid, not just a feature gap to close.
-- **Competitive Context & Strategic Relevance:** Rhyme is the sharpest existing example of the "system decides" end of the spectrum that our Non-Goals (§5.3) explicitly reject. This makes it a useful reference point when writing and refining intelligence and recommendation requirements (FR-17 in §13, and §20 Open Questions) so we remain deliberate about how much automation we actually want, and where.
+- **Competitive Context & Strategic Relevance:** Rhyme is the sharpest existing example of the "system decides" end of the spectrum that our Non-Goals (§5.3) explicitly reject. This makes it a useful reference point when writing and refining intelligence and recommendation requirements (FR-13/FR-14 in §12, and §19 Open Questions) so we remain deliberate about how much automation we actually want, and where.
 
-## 21.3 Future Direction — Post-MVP Intelligence Layer
+## 20.3 Future Direction — Post-MVP Intelligence Layer
 - Suggested groupings of attractions
 - Suggested lodging locations
 - Detection of overloaded days
