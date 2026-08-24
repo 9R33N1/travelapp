@@ -237,7 +237,7 @@ Two connected spaces:
 [Link to flow diagrams]
 
 ## Wireframes / Mockups
-[Link to Figma / design file]
+[Figma Design File](https://www.figma.com/design/wG3BGW8S89Ot1oh4EpgKIj/Untitled?node-id=0-1&t=KRFWxFkSCgVVT095-1)
 
 ## Design Guidelines
 [Link to design system / brand guidelines]
